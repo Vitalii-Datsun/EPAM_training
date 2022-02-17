@@ -7,15 +7,15 @@ import java.util.List;
 
 @Component
 public class Pet {
-    private List<Animal> list;
+    private List<Animal> animals;
 
     @Autowired
     public Pet(List<Animal> list) {
-        this.list = list;
+        this.animals = list;
     }
 
     public void printPets() {
-        for(Animal animal: list) {
+        for (Animal animal : animals) {
             System.out.println(animal.getClass().getSimpleName());
         }
     }
