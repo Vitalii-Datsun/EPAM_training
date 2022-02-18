@@ -22,10 +22,12 @@ public class BeanE {
                 ", value='" + value + '\'' +
                 '}';
     }
+
     @PostConstruct
     public void postConstruct() {
         System.out.println("BeanE inside @PostConstruct");
     }
+
     @PreDestroy
     public void preDestroy() {
         System.out.println("BeanE inside @PreDestroy");

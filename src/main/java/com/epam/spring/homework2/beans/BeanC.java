@@ -2,6 +2,7 @@ package com.epam.spring.homework2.beans;
 
 import com.epam.spring.homework2.annotations.Validation;
 import org.springframework.beans.factory.annotation.Value;
+
 @Validation
 public class BeanC {
     @Value("${beanC.name}")
