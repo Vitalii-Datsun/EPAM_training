@@ -18,15 +18,15 @@ public class BeanB {
                 '}';
     }
 
-    private void initMethodBeanB() {
+    public void initMethodBeanB() {
         System.out.println("BeanB inside InitMethodBeanB()");
     }
 
-    private void destroyMethodBeanB() {
+    public void destroyMethodBeanB() {
         System.out.println("BeanB inside DestroyMethodBeanB()");
     }
 
-    private void anotherInitMethod() {
+    public void anotherInitMethod() {
         System.out.println("BeanB inside AnotherInitMethod()");
     }
 }

@@ -6,8 +6,7 @@ import org.springframework.context.annotation.Import;
 import org.springframework.context.annotation.PropertySource;
 
 @Configuration
-@ComponentScan("com.epam.spring.homework2.another")
-@ComponentScan("com.epam.spring.homework2.beans")
+@ComponentScan({"com.epam.spring.homework2.another", "com.epam.spring.homework2.beans"})
 @Import(OtherConfig.class)
 @PropertySource("classpath:values.properties")
 public class BeansConfig {
